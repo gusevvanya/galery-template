@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+[data-content-alignment="left"] {
+    justify-content: flex-start;
+}
+[data-content-alignment="center"] {
+    justify-content: center;
+}
+[data-content-alignment="right"] {
+    justify-content: flex-end;
+}
+
+.toggle-container {
+    display: flex;
+    margin-left: 20px;
+    width: 150px;
+    background: #e1e1e1;
+    border-radius: 30px;
+    border: 5px solid #e1e1e1;
+    height: 30px;
+    cursor: pointer;
+}
+    .toogle-grip {
+        width: 50px;
+        height: 100%;
+        border-radius: 30px;
+        background: #6f6f6f;  
+    }
+.add-img-form {
+    padding: 20px;
+    width: 30%;
+    max-width: 300px;
+}
+    .add-img-form-title {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .add-img-form-input {
+        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    .add-img-form-input:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+    .add-img-form-btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+        cursor: pointer;
+    }
+
+.galery-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+    .galery-item {
+        position: relative;
+        margin: 3%;
+        width: 20%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .galery-item img {
+        margin-bottom: 10px;
+        width: 100%;
+        display: block;
+    }
+    .galery-item-title {
+        margin-top: auto;
+        font-weight: 600;
+        text-align: center;
+    }
+    .galery-item-close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        background: url(./images/close_icon.png) 0 0;
+        background-size: contain;
+        cursor: pointer;
+        transition: all 0.1s;
+        border: none;
+        outline: none;
+    }
+    .galery-item-close:hover {
+        transform: scale(1.2);
+    }

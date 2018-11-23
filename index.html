@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form
+        id="add-img-form"
+        class="add-img-form"
+    >
+        <p class="add-img-form-title">Add new image to gallery</p>
+        <input
+            id="add-img-form-title-input"
+            class="add-img-form-input"
+            type="text"
+            placeholder="Image name"
+        >
+        <button class="add-img-form-btn">
+            Add image
+        </button>
+    </form>
+    <div
+        class="toggle-container"
+        id="toggle-container"
+        data-content-alignment="left"
+    >
+        <div class="toogle-grip"  id="toogle-grip"></div>
+    </div>
+
+    <ul
+        class="galery-container"
+        id="galery-container"
+        data-content-alignment="left"
+    >
+        <img src="images/1.jpg" />
+        <p class="galery-item-title">Image title</p>
+        <button class="galery-item-close"></button>
+    </ul>
+
+    <script src="./script.js"></script>
+</body>
+</html>
